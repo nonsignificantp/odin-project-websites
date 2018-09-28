@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    title=title
+    meta(name="description" content="Refurbish google homepage with the help of Bulma.css")
+    link(rel="icon" type="image/png" href="")
+    
+    
+    meta(http-equiv='X-UA-Compatible')
+    link(rel='stylesheet', href='/common/bulma.css')
+    link(rel='stylesheet', href='/google/css/custom.css')
+  
+  body
+    section.hero.is-fullheight
+      include header.pug
+      include body.pug
+      include foot.pug

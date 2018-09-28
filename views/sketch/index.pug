@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    section.section
+        div.container
+            h1.title.is-4 Icons-4-humans
+            h2.subtitle.is-6 A simple point and click #[strong Etch-A-Sketch] with save and upload functionality. Just click on the canvas to start drawing.
+
+    section.section
+            div.container
+                div.field
+                    div.file.is-light
+                        label.file-label
+                            input(type='file', name='data', id='jsonfile').file-input
+                            span.file-cta
+                                span.file-label Load a file drawing...
+
+    section.section
+        div.container
+            div.card     
+                div.card-content
+                    div.grid-content
+                        - for(var i = 0; i < grid_height; i++)
+                            - for(var z = 0; z < grid_width; z++)
+                                div('data-x'=i, 'data-y'=z)#Pixel.grid-square
+                footer.card-footer.has-text-centered
+                    div.card-footer-item
+                        div#White
+                            p.heading {{name}}
+                            p {{count}}
+                    div.card-footer-item
+                        div#Black
+                            p.heading {{name}}
+                            p {{count}}
+                    div.card-footer-item
+                        a(src="#")#Download.button.is-medium.is-fullwidth.is-success Save
+    
+    section.section
+        div.container
+            div.field
+                a(src="#")#Reset.button.is-fullwidth.is-danger Reset
+            

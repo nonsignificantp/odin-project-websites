@@ -1,0 +1,43 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+section {
+    padding: .5em 1.5em !important;
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+      max-width: 400px;
+      width: 400px;
+    }
+  }
+
+.grid-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 1px;
+}
+
+.grid-square {
+    flex-basis: calc(6.25% - 0px);
+    margin: 0;
+    border: 1px solid;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px 0;
+}
+
+.grid-square::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+.is-selected {
+    transition: all 500ms;
+    background-color: #000000;
+}

@@ -1,0 +1,16 @@
+.is-google {
+    font-size: 6em;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.is-g1 {color: #3273dc;}
+.is-o1 {color: #ff3860;}
+.is-o2 {color: #ffdd57;}
+.is-g2 {color: #3273dc;}
+.is-l {color: #23d160;}
+.is-e {color: #ff3860;}
+
+.separation {
+    margin-top: 20px;
+}
